@@ -15,6 +15,8 @@ RUN apt-get update && \
         elfutils \
         binutils \
         zlib1g-dev \
+        wget \
+        curl \
         gcc \
         g++ && \
     useradd -d /developer -m developer && \
