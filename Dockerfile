@@ -25,7 +25,7 @@ RUN apt-get update && \
         curl \
         ca-certificates \
         binutils \
-        zlib1g-devel \
+        zlib1g-dev \
         g++ && \
     useradd -d /developer -m developer && \
     chown -R developer:developer /developer && \
