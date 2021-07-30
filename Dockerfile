@@ -23,7 +23,10 @@ RUN apt-get update && \
         elfutils \
         wget \
         curl \
-        ca-certificates && \
+        ca-certificates \
+        binutils \
+        zlib1g-devel \
+        g++ && \
     useradd -d /developer -m developer && \
     chown -R developer:developer /developer && \
     rm -rf /var/lib/apt/lists/*
